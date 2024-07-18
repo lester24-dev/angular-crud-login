@@ -1,0 +1,17 @@
+
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<form [formGroup]="form">
+    <h3>Login Here</h3>
+
+    <label for="username">Email</label>
+    <input matInput type="text" formControlName="email" placeholder="Email or Phone" id="username">
+
+    <label for="password">Password</label>
+    <input matInput type="password" formControlName="password" placeholder="Password" id="password">
+
+    <button type="button" (click)="logins(form.value)">Log In</button>
+    
+</form>

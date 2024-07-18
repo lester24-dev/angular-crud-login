@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --primary: #026467;
+    --secondary-color: #E5F5EA;
+    --body-text-color: #596392;
+    --navbar-footer-color: #f9f9f9;
+    --secondary: #801312;
+}
+
+.add-product-modal{
+    display: flex;
+    flex-direction: column;
+    min-width: 640px;
+    max-width: 960px;
+    width: 100%;
+    max-height: 80vh;
+    border-radius: 1vh;
+   
+}

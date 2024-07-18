@@ -1,0 +1,50 @@
+<h4 mat-dialog-title>Title</h4>
+
+<mat-dialog-content>
+  <form [formGroup]="formGroup" class="form">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input matInput placeholder="Product Name" class="form-control" [formControlName]="'name'">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input matInput placeholder="Product Price" class="form-control" [formControlName]="'price'">
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <textarea matInput placeholder="Product Information" class="form-control" rows="5" [formControlName]="'info'"></textarea>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+            <input matInput placeholder="Product Brand" class="form-control" [formControlName]="'brand'">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group">
+            <input type="file" matInput placeholder="Product Brand" class="form-control" [formControlName]="'img'" (change)="onFileSelected($event)">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <button mat-flat-button mat-dialog-close="true" (click)="submit(formGroup.value)" class="btn">Add</button>
+        </div>
+        <div class="col-sm-6">
+          <button mat-dialog-close="true" class="btn btn-danger btn">Close</button>
+        </div>
+    </div>
+     
+
+  </form>
+</mat-dialog-content>

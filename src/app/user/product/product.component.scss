@@ -1,0 +1,130 @@
+.container {
+    max-height: max-content;
+    }
+ 
+    .notary-section {
+     display: flex;
+     justify-content: center;
+     width: 100vw;
+    }
+ 
+    .notary-row {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     gap: 20px;
+     grid-auto-rows: minmax(100px, auto);
+     padding: 2vh 8vw;
+     width: 50%;
+    }
+ 
+    .notary-item {
+     grid-column: span 1;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+     background-color: #f6f6f6;
+     border-radius: 1px;
+     border: 1px solid rgb(224, 224, 224);
+ 
+     a {
+       width: 100%;
+     }
+    }
+ 
+    .notary-info-container {
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: flex-start;
+     flex-direction: column;
+     padding: 16px;
+    }
+ 
+    .notary-name {
+     font-size: 1.4rem;
+     font-weight: 700;
+    }
+ 
+    .notary-info-container > * {
+     margin-top: 8px;
+     line-height: 1.5;
+    }
+ 
+    .info {
+     width: 15px;
+     height: 15px;
+     margin-right: 6px;
+    }
+    
+    .address {
+     display: flex;
+     align-items: flex-start;
+     width: 100%;
+ 
+     .notary-address {
+       word-break: break-word;
+     }
+    }
+ 
+    .commission {
+     display: flex;
+     align-items: center;
+     width: 100%;
+ 
+     .notary-number {
+       word-break: break-word;
+     }
+   }
+ 
+    .notary-img img {
+     width: 310px;
+     height: 200px;
+     object-fit: cover;
+     border-top-left-radius: 24px;
+     border-top-right-radius: 24px;
+    }
+ 
+ 
+    .main{
+     padding: 0 !important;
+     min-height: 100%;
+     background-color: #fff;
+ 
+     .header{
+         display: flex;
+         flex: 1 1 auto;
+         align-items: center;
+         padding: 40px 32px;
+         border-bottom-width: 1px;
+         background-color: #fff;
+ 
+         .title{
+             margin-right: 32px;
+ 
+         }
+ 
+         h1 {
+             margin: 0;
+             line-height: 1;
+           }
+ 
+           .main-action{
+             display: flex;
+             align-items: center;
+             margin-left: auto;
+           }
+ 
+           .add-contact {
+             flex: 1 0 auto;
+             padding: 10 20px 0 16px;
+             background-color: #008000;
+             border-radius: 1px;
+ 
+             .mat-icon {
+               margin-right: 8px;
+               
+             }
+           }
+     }
+    }

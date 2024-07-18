@@ -1,0 +1,29 @@
+<div class="form">
+    <form [formGroup]="formGroup">
+
+        <div class="form-group">
+          <input matInput [autocomplete]="'off'" [placeholder]="'Name'" class="forms" formControlName="name"
+               [(ngModel)]="currentRecord.name">
+        </div>
+     
+         <div class="form-group">
+          <input matInput [autocomplete]="'off'" [placeholder]="'Price'" class="forms" formControlName="price"
+          [(ngModel)]="currentRecord.price">
+         </div>
+     
+         <div class="form-group">
+          <input matInput [autocomplete]="'off'" [placeholder]="'Brand'" class="forms" formControlName="brand"
+          [(ngModel)]="currentRecord.brand">
+         </div>
+
+         <div class="form-group">
+          <textarea matInput formControlName="info" cols="65" rows="5" [(ngModel)]="currentRecord.info"></textarea>
+         </div>
+
+         <div class="form-group">
+          <button mat-flat-button [color]="'primary'" style="border-radius: 1px; margin-left: 20px;width: 500px;" (click)="update(formGroup.value)">Update</button>
+         
+         </div>
+         
+     </form>
+</div>

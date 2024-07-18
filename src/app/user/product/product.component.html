@@ -1,0 +1,37 @@
+<div class="container">
+    
+    <div class="main">
+        <div class="header">
+            <div class="title">
+                <h1>Products</h1>
+            </div>
+            <div class="main-action">
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="notary-row" *ngFor="let products of product | async">
+
+        <div class="notary-item">
+            <a href=""></a>
+
+            <div class="notary-img">
+                <img src="{{products.img}}" alt="">
+            </div>
+
+            <div class="notary-info-container">
+                <span class="notary-name" style="text-transform: capitalize;"> {{products.name}} </span>
+
+                <div class="address">
+                    <span class="notary-address"> {{products.price}} </span>
+                </div>
+
+                <div class="commission">
+                    <span class="notary-number" style="text-transform: capitalize;"><strong> {{products.info}} </strong></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

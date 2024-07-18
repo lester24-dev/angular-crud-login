@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" [matMenuTriggerFor]="moreMenu">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <mat-menu #moreMenu="matMenu">
+    <button mat-menu-item routerLink="/login" (click)="logout()">Logout</button>
+
+  </mat-menu>
+</mat-toolbar>
+<router-outlet></router-outlet>
